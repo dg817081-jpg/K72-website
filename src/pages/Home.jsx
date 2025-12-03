@@ -1,0 +1,23 @@
+import React from "react";
+import Video from "../components/home/video";
+import HomeHeroText from "../components/home/HomeHeroText";
+import HomeBottomText from "../components/home/HomeBottomText";
+
+const Home = () => {
+    return (
+        <div className="text-white">
+            {/* Background Video */}
+            <div className="h-screen w-screen fixed -z-10">
+                <Video />
+            </div>
+
+            {/* Content */}
+            <div className="h-screen w-screen relative flex flex-col justify-between">
+                <HomeHeroText />
+                <HomeBottomText />
+            </div> 
+        </div>
+    );
+};
+
+export default Home;
